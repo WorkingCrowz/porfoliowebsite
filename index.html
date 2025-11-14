@@ -1,333 +1,487 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ashish Singh | AI & Robotics Engineer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Ashish Singh | AI & Robotics Engineer</title>
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome CDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- theme color -->
+    <meta name="theme-color" content="#0a0a0a" id="metaThemeColor">
 </head>
+<body>
+    <header>
+        <nav>
+            <a href="#hero" class="logo">hey</a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#awards" class="nav-link">Awards</a></li>
+                <li><a href="#trainings" class="nav-link">Certifications</a></li>
+                <li><a href="#volunteering" class="nav-link">Volunteering</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
 
-<body class="theme-dark">
+            <!-- Theme toggle (placed inside nav so it sits on the right) -->
+            <div class="theme-toggle">
+                <input type="checkbox" id="themeSwitch" aria-label="Toggle light/dark theme">
+                <label for="themeSwitch" class="toggle-label" title="Toggle day/night">
+                    <span class="toggle-circle"></span>
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </label>
+            </div>
 
-<header class="site-header">
-  <div class="header-inner">
+            <div class="mobile-menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Legacy button -->
-    <div class="left-controls">
-      <button id="legacyToggle" class="legacy-toggle"></button>
-    </div>
-
-    <!-- THEME SWITCH -->
-    <div class="mode-selector">
-      <div class="mode-pill" id="modePill" role="switch" aria-checked="true" tabindex="0">
-        <span class="mode-knob"></span>
-      </div>
-      <button id="modeIconBtn" class="mode-icon">
-        <i class="fas fa-moon"></i>
-      </button>
-    </div>
-
-    <!-- NAVIGATION -->
-    <nav class="main-nav">
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#awards">Awards</a></li>
-        <li><a href="#trainings">Certifications</a></li>
-        <li><a href="#volunteering">Volunteering</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-    <div class="mobile-toggle"><i class="fas fa-bars"></i></div>
-  </div>
-</header>
-
-<!-- HERO SECTION -->
-<section id="hero" class="hero-landing">
-  <div class="hero-inner">
-
-    <svg class="hero-gears" width="210" height="210">
-      <g fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="2">
-        <circle cx="50" cy="50" r="36"></circle>
-        <circle cx="130" cy="30" r="22"></circle>
-      </g>
-    </svg>
-
-    <div class="hero-content">
-      <h1 class="hero-title">Hello, I'm Ashish <span class="wave">👋</span></h1>
-      <p class="hero-subtitle">
-        AI & Robotics Engineer | Cybersecurity Specialist <br>
-        Machine Learning Enthusiast
-      </p>
-
-      <div class="hero-ctas">
-        <a href="#about" class="btn primary"><i class="fas fa-user"></i> Know More</a>
-        <a href="#projects" class="btn outline"><i class="fas fa-code"></i> View Projects</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about">
-  <h2 class="section-title">About Me</h2>
-  <div class="about-content">
-
-    <div class="about-image">
-      <img src="hero.webp">
-    </div>
-
-    <div class="about-text">
-      <p>I am Ashish Singh, pursuing B.Tech CSE with specialization in AI & Robotics at VIT Chennai.</p>
-
-      <p>I work in AI, ML, automation, cloud security and intelligent workflow engineering.</p>
-
-      <p>I build ML systems, optimize automation pipelines, and improve user experience through analytics.</p>
-
-      <div class="skills">
-        <span class="skill-tag">Python</span>
-        <span class="skill-tag">Machine Learning</span>
-        <span class="skill-tag">Automation</span>
-        <span class="skill-tag">AWS</span>
-        <span class="skill-tag">Cybersecurity</span>
-        <span class="skill-tag">TensorFlow</span>
-        <span class="skill-tag">Django</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <h2 class="section-title">Experience</h2>
-
-  <div class="experience-grid">
-
-    <!-- Arbhu Enterprises -->
-    <div class="experience-card">
-      <div class="experience-header">
-        <div>
-          <h3 class="experience-title">AI Automation Development Intern</h3>
-          <p class="company-name">Arbhu Enterprises</p>
+    <section id="hero">
+        <div class="particles">
+            <div class="particle" style="left: 20%; animation-delay: 0s;"></div>
+            <div class="particle" style="left: 40%; animation-delay: 2s;"></div>
+            <div class="particle" style="left: 60%; animation-delay: 4s;"></div>
+            <div class="particle" style="left: 80%; animation-delay: 1s;"></div>
+            <div class="particle" style="left: 30%; animation-delay: 3s;"></div>
+            <div class="particle" style="left: 70%; animation-delay: 5s;"></div>
         </div>
-        <div class="experience-date">Jul 2025 – Present</div>
-      </div>
-
-      <ul class="experience-list">
-        <li>Designed automation pipelines using n8n & Make.com.</li>
-        <li>Integrated CRM → Marketing → Fulfillment workflows.</li>
-        <li>Reduced manual workload across departments.</li>
-        <li>Optimized triggers, webhooks, and data mapping.</li>
-      </ul>
-    </div>
-
-    <!-- Valeo -->
-    <div class="experience-card">
-      <div class="experience-header">
-        <div>
-          <h3 class="experience-title">Machine Learning Intern</h3>
-          <p class="company-name">Valeo</p>
+        <div class="hero-content">
+            <h1>Hello, I'm Ashish 👋</h1>
+            <p class="hero-subtitle">AI & Robotics Engineer | Cybersecurity Specialist | Machine Learning Enthusiast</p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn btn-primary">
+                    <i class="fas fa-user"></i> Know More
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <i class="fas fa-code"></i> View Projects
+                </a>
+            </div>
         </div>
-        <div class="experience-date">Aug – Nov 2024</div>
-      </div>
+    </section>
 
-      <ul class="experience-list">
-        <li>Trained and optimized ML models improving accuracy by 15%.</li>
-        <li>Worked on Computer Vision/ADAS-related pipelines.</li>
-      </ul>
-    </div>
-
-    <!-- Botech -->
-    <div class="experience-card">
-      <div class="experience-header">
-        <div>
-          <h3 class="experience-title">Cloud Security Intern</h3>
-          <p class="company-name">Botech Software</p>
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-image">
+                <img src="hero.webp" alt="Ashish Singh" onerror="this.src='https://via.placeholder.com/300x400/1a1a1a/00d4ff?text=Ashish+Singh'">
+            </div>
+            <div class="about-text">
+                <p>Hi, I'm Ashish Singh, a passionate Computer Science student pursuing my B.Tech with a specialization in AI & Robotics at VIT. I'm driven by the endless possibilities of transforming complex data into intelligent, actionable solutions.</p>
+                <p>My journey spans across multiple domains - from developing machine learning models and securing cloud infrastructures to building full-stack applications that solve real-world problems. I believe in the power of technology to create meaningful impact.</p>
+                <p>I thrive in environments where I can combine my technical expertise with creative problem-solving, whether it's optimizing ML algorithms, hardening security systems, or designing user-centric applications that drive engagement and retention.</p>
+                <div class="skills">
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">TensorFlow</span>
+                    <span class="skill-tag">AWS</span>
+                    <span class="skill-tag">Django</span>
+                    <span class="skill-tag">Cloud Security</span>
+                    <span class="skill-tag">NLP</span>
+                    <span class="skill-tag">Computer Vision</span>
+                </div>
+            </div>
         </div>
-        <div class="experience-date">Oct 2023 – Apr 2024</div>
-      </div>
+    </section>
 
-      <ul class="experience-list">
-        <li>Performed cloud audits & vulnerability analysis.</li>
-        <li>Configured IAM, firewall rules, encryption & alerts.</li>
-      </ul>
-    </div>
+    <!-- Experience -->
+    <section id="experience">
+        <h2 class="section-title">Experience</h2>
+        <div class="experience-grid">
 
-  </div>
-</section>
+            <!-- Arbhu Enterprises -->
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">AI Automation Development Intern</h3>
+                        <p class="company-name">Arbhu Enterprises</p>
+                    </div>
+                    <div class="experience-date">Jul 2025 – Present</div>
+                </div>
+                <ul class="experience-list">
+                    <li>Identified automation opportunities across marketing, sales, and operations teams.</li>
+                    <li>Developed automated workflows using N8N, Make.com and third-party connectors.</li>
+                    <li>Integrated automation pipelines to improve productivity and reduce manual workload.</li>
+                    <li>Troubleshot and optimized automation logic to ensure reliable system performance.</li>
+                </ul>
+            </div>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <h2 class="section-title">Projects</h2>
+            <!-- Valeo -->
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Machine Learning Intern</h3>
+                        <p class="company-name">Valeo</p>
+                    </div>
+                    <div class="experience-date">Aug – Nov 2024</div>
+                </div>
+                <ul class="experience-list">
+                    <li>Developed and optimized ML models improving accuracy by 15% using TensorFlow & Scikit-learn.</li>
+                    <li>Reduced latency by 10% by optimizing deployment and preprocessing pipelines.</li>
+                    <li>Worked with large automotive datasets for real-time ML use cases.</li>
+                    <li>Collaborated with cross-functional teams to deploy solutions in production.</li>
+                </ul>
+            </div>
 
-  <div class="projects-grid">
+            <!-- Botech Software -->
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Cloud Security Intern</h3>
+                        <p class="company-name">Botech Software</p>
+                    </div>
+                    <div class="experience-date">Oct 2023 – Apr 2024</div>
+                </div>
+                <ul class="experience-list">
+                    <li>Identified vulnerabilities in cloud configurations through detailed security reviews.</li>
+                    <li>Implemented security tests and strengthened infrastructure.</li>
+                    <li>Responded to real-time security alerts, mitigating threats efficiently.</li>
+                    <li>Improved cloud security policies and compliance benchmarks.</li>
+                </ul>
+            </div>
 
-    <div class="project-card">
-      <div class="project-header"><i class="fas fa-leaf"></i></div>
-      <h3 class="project-title">EcoTrack – Waste Management Platform</h3>
-      <p class="project-description">Django-based app improving community waste management efficiency.</p>
-      <div class="skills">
-        <span class="skill-tag">Django</span>
-        <span class="skill-tag">SQLite</span>
-      </div>
-    </div>
+        </div>
+    </section>
 
-    <div class="project-card">
-      <div class="project-header"><i class="fas fa-microchip"></i></div>
-      <h3 class="project-title">AI-Text-to-Speech Engine</h3>
-      <p class="project-description">Natural ML-based speech synthesis.</p>
-      <div class="skills"><span class="skill-tag">NLP</span><span class="skill-tag">Python</span></div>
-    </div>
+    <!-- Projects -->
+    <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
 
-    <div class="project-card">
-      <div class="project-header"><i class="fas fa-file-invoice"></i></div>
-      <h3 class="project-title">RFQ Maker</h3>
-      <p class="project-description">Automated quotation system built using Zoho Creator.</p>
-      <div class="skills"><span class="skill-tag">Zoho</span></div>
-    </div>
+            <!-- EcoTrack -->
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">EcoTrack – Waste Management Platform</h3>
+                    <p class="project-description">A Django-based waste management optimization system with real-time dashboards, OTP login and personalized analytics improving engagement by 35%.</p>
+                    <div class="project-metrics">
+                        <span class="metric">+35% Engagement</span>
+                        <span class="metric">+20% Retention</span>
+                    </div>
+                    <div class="skills">
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">SQLite</span>
+                        <span class="skill-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
 
-    <div class="project-card">
-      <div class="project-header"><i class="fas fa-robot"></i></div>
-      <h3 class="project-title">Content Automation Workflow</h3>
-      <p class="project-description">Automated marketing content flow with Make.com & Buffer.</p>
-      <div class="skills"><span class="skill-tag">Make.com</span></div>
-    </div>
+            <!-- TTS Engine -->
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">AI-Powered Text-to-Speech Engine</h3>
+                    <p class="project-description">A Python-based TTS system using state-of-the-art NLP techniques to generate natural human-like speech across desktop & web.</p>
+                    <div class="project-metrics">
+                        <span class="metric">Real-Time Processing</span>
+                        <span class="metric">Cross-Platform</span>
+                    </div>
+                    <div class="skills">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">TTS</span>
+                    </div>
+                </div>
+            </div>
 
-  </div>
-</section>
+            <!-- RFQ Maker -->
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-file-invoice"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">RFQ Maker – Zoho Creator App</h3>
+                    <p class="project-description">A custom application built for generating, storing and managing Request-for-Quotations, improving operational efficiency for sales teams.</p>
+                    <div class="skills">
+                        <span class="skill-tag">Zoho Creator</span>
+                        <span class="skill-tag">Automation</span>
+                    </div>
+                </div>
+            </div>
 
-<!-- AWARDS -->
-<section id="awards">
-  <h2 class="section-title">Awards & Honors</h2>
+            <!-- n8n Shipping Calculator -->
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-ship"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Sea & Air Shipping Cost Calculator</h3>
+                    <p class="project-description">Automated n8n workflow fetching and comparing shipping rates from multiple providers, integrated directly into the company website.</p>
+                    <div class="skills">
+                        <span class="skill-tag">n8n</span>
+                        <span class="skill-tag">APIs</span>
+                        <span class="skill-tag">Automation</span>
+                    </div>
+                </div>
+            </div>
 
-  <div class="experience-grid">
+            <!-- CRO Optimization -->
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Conversion Rate Optimization</h3>
+                    <p class="project-description">Analyzed website metrics via Zoho PageSense & Google Analytics, improving conversions through behavioral insights and UX experiments.</p>
+                    <div class="skills">
+                        <span class="skill-tag">Google Analytics</span>
+                        <span class="skill-tag">PageSense</span>
+                        <span class="skill-tag">CRO</span>
+                    </div>
+                </div>
+            </div>
 
-    <div class="experience-card">
-      <h3 class="experience-title">ClimaTech Hackathon — Winner</h3>
-      <p class="company-name">EcoTrack Project</p>
-    </div>
+            <!-- Content Automation -->
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Content Automation Workflow</h3>
+                    <p class="project-description">Automated marketing content creation and scheduling using Make.com and Buffer, reducing manual effort and improving posting consistency.</p>
+                    <div class="skills">
+                        <span class="skill-tag">Make.com</span>
+                        <span class="skill-tag">Buffer</span>
+                        <span class="skill-tag">Automation</span>
+                    </div>
+                </div>
+            </div>
 
-    <div class="experience-card">
-      <h3 class="experience-title">Valeo ML Hackathon — Winner</h3>
-      <p class="company-name">Valeo 2024</p>
-    </div>
+        </div>
+    </section>
 
-  </div>
-</section>
+    <!-- Awards & Honors -->
+    <section id="awards">
+        <h2 class="section-title">Awards & Honors</h2>
+        <div class="experience-grid">
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">ClimaTech Hackathon — Winner</h3>
+                        <p class="company-name">EcoTrack Project</p>
+                    </div>
+                    <div class="experience-date">2024</div>
+                </div>
+                <ul class="experience-list">
+                    <li>Awarded first place for EcoTrack — end-to-end waste management platform (ClimaTech Hackathon).</li>
+                </ul>
+            </div>
 
-<!-- TRAININGS -->
-<section id="trainings">
-  <h2 class="section-title">Certifications</h2>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Valeo Machine Learning Hackathon — Winner</h3>
+                        <p class="company-name">VIT Chennai</p>
+                    </div>
+                    <div class="experience-date">2024</div>
+                </div>
+                <ul class="experience-list">
+                    <li>Recognized for top ML solution at Valeo-hosted hackathon (VIT Chennai team).</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-  <div class="projects-grid">
+    <!-- Trainings & Certifications -->
+    <section id="trainings">
+        <h2 class="section-title">Trainings & Certifications</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header"><i class="fas fa-certificate"></i></div>
+                <div class="project-content">
+                    <h3 class="project-title">AWS Academy Cloud Foundations</h3>
+                    <p class="project-description">AWS Academy Graduate — AWS Cloud Foundations (01/01/2025).</p>
+                    <div class="skills">
+                        <span class="skill-tag">AWS Academy</span>
+                        <span class="skill-tag">Cloud Foundations</span>
+                    </div>
+                </div>
+            </div>
 
-    <div class="project-card">
-      <i class="fas fa-certificate"></i>
-      <h3>AWS Academy Cloud Foundations</h3>
-      <p>AWS Academy Graduate – Jan 2025</p>
-    </div>
+            <div class="project-card">
+                <div class="project-header"><i class="fas fa-shield-alt"></i></div>
+                <div class="project-content">
+                    <h3 class="project-title">CEH v12 (EC-Council)</h3>
+                    <p class="project-description">Certified Ethical Hacker (CEHv12) — EC-Council (04/01/2024).</p>
+                    <div class="skills">
+                        <span class="skill-tag">CEHv12</span>
+                        <span class="skill-tag">EC-Council</span>
+                    </div>
+                </div>
+            </div>
 
-    <div class="project-card">
-      <i class="fas fa-shield-alt"></i>
-      <h3>CEH v12</h3>
-      <p>EC-Council – Apr 2024</p>
-    </div>
+            <div class="project-card">
+                <div class="project-header"><i class="fas fa-university"></i></div>
+                <div class="project-content">
+                    <h3 class="project-title">Cybersecurity Global Virtual Internship</h3>
+                    <p class="project-description">Completed internship with Clifford Chance (07/31/2023).</p>
+                    <div class="skills">
+                        <span class="skill-tag">Clifford Chance</span>
+                        <span class="skill-tag">Cybersecurity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="project-card">
-      <i class="fas fa-university"></i>
-      <h3>Cybersecurity Virtual Internship</h3>
-      <p>Clifford Chance – Jul 2023</p>
-    </div>
+    <!-- Volunteering -->
+    <section id="volunteering">
+        <h2 class="section-title">Volunteering</h2>
+        <div class="experience-grid">
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Humari Pehchan NGO</h3>
+                        <p class="company-name">Volunteer</p>
+                    </div>
+                    <div class="experience-date">—</div>
+                </div>
+                <ul class="experience-list">
+                    <li>Developed sustainable income initiatives for local artisans via market research and implementation support.</li>
+                </ul>
+            </div>
 
-  </div>
-</section>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">Team Aviators International (TAI)</h3>
+                        <p class="company-name">Project Logistics & Operations</p>
+                    </div>
+                    <div class="experience-date">—</div>
+                </div>
+                <ul class="experience-list">
+                    <li>Managed logistics, team operations and resource planning for a collegiate drone-making team.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-<!-- VOLUNTEERING -->
-<section id="volunteering">
-  <h2 class="section-title">Volunteering</h2>
+    <!-- Extro Section (new) -->
+    <section id="extro">
+        <h2 class="section-title">A Little More About Me</h2>
 
-  <div class="experience-grid">
+        <div class="experience-grid">
 
-    <div class="experience-card">
-      <h3 class="experience-title">Humari Pehchan NGO</h3>
-      <p class="company-name">Volunteer</p>
-    </div>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">What Drives Me</h3>
+                    </div>
+                </div>
+                <ul class="experience-list">
+                    <li>I love building intelligent systems that solve real problems.</li>
+                    <li>AI, automation, and cybersecurity excite me the most.</li>
+                    <li>I enjoy working on challenging projects that push my creativity.</li>
+                </ul>
+            </div>
 
-    <div class="experience-card">
-      <h3 class="experience-title">Team Aviators International (TAI)</h3>
-      <p class="company-name">Project Logistics</p>
-    </div>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">My Vision</h3>
+                    </div>
+                </div>
+                <ul class="experience-list">
+                    <li>To build scalable AI-driven products that improve human life.</li>
+                    <li>To contribute to ethical and secure AI development.</li>
+                    <li>To explore robotics, automation, and intelligent agent systems.</li>
+                </ul>
+            </div>
 
-  </div>
-</section>
+            <div class="experience-card">
+                <div class="experience-header">
+                    <div>
+                        <h3 class="experience-title">What I’m Looking Forward To</h3>
+                    </div>
+                </div>
+                <ul class="experience-list">
+                    <li>Collaborating on impactful AI/ML research.</li>
+                    <li>Working with talented teams to build high-quality tech solutions.</li>
+                    <li>Continually learning new technologies and scaling my expertise.</li>
+                </ul>
+            </div>
 
-<!-- EXTRO SECTION -->
-<section id="extro">
-  <h2 class="section-title">A Little More About Me</h2>
+        </div>
+    </section>
 
-  <div class="experience-grid">
-    <div class="experience-card">
-      <h3 class="experience-title">What Drives Me</h3>
-      <ul><li>Solving real problems using AI.</li><li>Making automation scalable.</li></ul>
-    </div>
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+            <div class="contact-info">
+                <h3>Let's Connect</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Email</h4>
+                        <p>workashishsinghwork@gmail.com</p>
+                    </div>
+                </div>
 
-    <div class="experience-card">
-      <h3 class="experience-title">My Vision</h3>
-      <ul><li>Ethical AI development.</li><li>Robotics + ML integrations.</li></ul>
-    </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>Phone</h4>
+                        <p>+91 7217692417</p>
+                    </div>
+                </div>
 
-    <div class="experience-card">
-      <h3 class="experience-title">Future Goals</h3>
-      <ul><li>AI Research & Robotics Projects.</li><li>Open-source contributions.</li></ul>
-    </div>
-  </div>
-</section>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/ashish-singh-09988021b</p>
+                    </div>
+                </div>
+            </div>
 
-<!-- CONTACT -->
-<section id="contact">
-  <h2 class="section-title">Contact</h2>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
 
-  <div class="contact-grid">
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
 
-    <div class="contact-info">
-      <h3>Email</h3>
-      <p>workashishsinghwork@gmail.com</p>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
 
-      <h3>Phone</h3>
-      <p>+91 7217692417</p>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-      <h3>LinkedIn</h3>
-      <p>linkedin.com/in/ashish-singh-09988021b</p>
-    </div>
+    <footer>
+        <p>&copy; 2025 Ashish Singh. All rights reserved. | Crafted with passion for innovation</p>
+    </footer>
 
-    <form id="contactForm">
-      <label>Name</label>
-      <input type="text" id="name" required>
-
-      <label>Email</label>
-      <input type="email" id="email" required>
-
-      <label>Message</label>
-      <textarea id="message" rows="5" required></textarea>
-
-      <button type="submit" class="btn primary" style="width:100%;">
-        <i class="fas fa-paper-plane"></i> Send
-      </button>
-    </form>
-
-  </div>
-</section>
-
-<footer>
-  <p>© 2025 Ashish Singh. All rights reserved.</p>
-</footer>
-
-<script src="script.js"></script>
+    <!-- Local JS -->
+    <script src="script.js" defer></script>
 </body>
 </html>
 
