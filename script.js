@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initializePortfolio();
 });
 
+
 // Main initialization function
 function initializePortfolio() {
     setupNavigation();
@@ -566,3 +567,45 @@ window.addEventListener('scroll', debouncedScroll);
 // Console welcome message
 console.log('%c🚀 Welcome to Ashish Singh\'s Portfolio!', 'color: #00d4ff; font-size: 16px; font-weight: bold;');
 console.log('%cBuilt with passion for innovation and technology.', 'color: #999; font-size: 12px;');
+
+
+/* ===========================
+   Theme Toggle System (persist preference)
+   =========================== */
+(function () {
+    const themeSwitch = document.getElementById("themeSwitch");
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+
+    if (!themeSwitch) return;
+
+    function applyTheme(theme) {
+        if (theme === "light") {
+            document.body.classList.add("light-mode");
+            if (metaTheme) metaTheme.setAttribute('content', '#ffffff');
+            themeSwitch.checked = true;
+        } else {
+            document.body.classList.remove("light-mode");
+            if (metaTheme) metaTheme.setAttribute('content', '#0a0a0a');
+            themeSwitch.checked = false;
+        }
+    }
+
+    // Load saved preference from localStorage
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+        applyTheme(savedTheme);
+    } else {
+        // optional: set default based on OS preference
+        const prefersLight = window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches;
+        applyTheme(prefersLight ? "light" : "dark");
+    }
+
+    // Toggle handler
+    themeSwitch.addEventListener("change", () => {
+        const isLight = themeSwitch.checked;
+        const newTheme = isLight ? "light" : "dark";
+        applyTheme(newTheme);
+        localStorage.setItem("theme", newTheme);
+    });
+})();
+
